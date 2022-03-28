@@ -35,7 +35,9 @@ nav ul li{
     line-height: 80px;
 
 }
-
+#boton{
+    margin-right:20% ;
+}
 nav ul li a{
     color: white;
     font-size: 18px;
