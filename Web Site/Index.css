@@ -5,52 +5,67 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    
 }
-/*Barra de Navegacion*/
-nav{
-    background: #8bc34a;
-    height: 80px;
+/*Aplicamos display:flex al headerpara que ponga en línea el nav con el botón de iniciar sesión*/
+header{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background: #8bc34a;
 }
 
-.enlace{
-    position: absolute;
-    padding: 10px 0px;
-    margin-left: 2%;
-    width: 50px;
+nav{
+    display: flex;
+    align-items: center;
 }
 
-.logo{
-    height: 60px;
-    border-radius: 50px;
-}
-
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-
+nav > ul{
+    display: flex;
 }
 
 nav ul li a{
+    margin-left: 5px;
     color: white;
     font-size: 18px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 7px 12px;
+    text-transform: uppercase;
+    
+}
+#btn1{
+    margin-left: 20px;
+}
+
+#sesion{
+    font-size: 18px;
+    margin-right: 25px;
+    background: #00bcd4;
+    border-radius: 50px;
+    border: #dcedc8 solid 5px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 7px 15px;
     text-transform: uppercase;
+ 
+}
+
+.logo{
+    margin-left: 10%;
+    height: 60px;
+    border-radius: 50px;
 }
 
 #sesion{
     background: #00bcd4;
     border-radius: 50px;
     border: #dcedc8 solid 5px;
+    
 }
-
 /*Hovers de Barra de Navegacion*/
 .logo:hover{
     border: #00bcd4 solid 2px;
