@@ -13,6 +13,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     height: 80px;
     background: #8bc34a;
 }
@@ -41,6 +42,7 @@ nav ul li a{
 }
 
 #sesion{
+    text-align: center;
     font-size: 18px;
     margin-right: 25px;
     background: #00bcd4;
@@ -97,57 +99,53 @@ nav ul li a{
 #check{
     display: none;
 }
-
 /*Seccion de contenido*/
 section{
+    display: flex;
+    justify-content: space-between;
     background: url(../img/fondo.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 30px - 80px);
-}
 
+}
 .bienvenida{
-    position: absolute;
-    width: 900px;
-    height: 600px;
-    margin: 150px 60px;
+    width: 45%;
+    height: 80%;
 }
 
 h1{
     color: #212121;
-    font-size: 50px;
+    font-size: 6vh;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #sub{
     color: #212121;
-    font-size: 25px;
+    font-size: 4vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 hr{
     background: #c79e68;
     height: 4px;
     border-radius: 50px;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 #parrafo{
     color: #212121;
-    font-size: 20px;
+    font-size: 2.7vh;
     text-align: justify;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .vecinos{
     background: #689f38;
-    position: absolute;
-    margin-left: 1320px;
-    margin-top: 50px;
     width: 500px;
-    height: 750px;
+    height: 550px;
     border-radius: 50px;
 }
 

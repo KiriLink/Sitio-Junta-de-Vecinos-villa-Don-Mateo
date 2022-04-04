@@ -98,6 +98,8 @@ section{
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 30px - 80px);
+    display: flex;
+    
 }
 
 h1{
@@ -166,9 +168,7 @@ input{
 }
 
 .div_imagen_login{
-    position: absolute;
     text-align: center;
-    margin: 23.4% 37%;
 }
 
 /*Footer*/
