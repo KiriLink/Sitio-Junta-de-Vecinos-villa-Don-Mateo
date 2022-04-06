@@ -1,0 +1,258 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+/*Aplicamos display:flex al headerpara que ponga en línea el nav con el botón de iniciar sesión*/
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background: #8bc34a;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+}
+
+nav ul li a {
+  margin-left: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 7px 12px;
+  text-transform: uppercase;
+}
+#btn1 {
+  margin-left: 20px;
+}
+
+#sesion {
+  font-size: 18px;
+  margin-right: 25px;
+  background: #00bcd4;
+  border-radius: 50px;
+  border: #dcedc8 solid 5px;
+  color: white;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 7px 15px;
+  text-transform: uppercase;
+}
+
+.logo {
+  margin-left: 10%;
+  height: 60px;
+  border-radius: 50px;
+}
+
+#sesion {
+  background: #00bcd4;
+  border-radius: 50px;
+  border: #dcedc8 solid 5px;
+}
+/*Hovers de Barra de Navegacion*/
+.logo:hover {
+  border: #00bcd4 solid 2px;
+  transition: 0.2s;
+}
+
+#sesion:hover {
+  color: #00bcd4;
+  background: #dcedc8;
+  border: #00bcd4 solid 5px;
+  transition: 0.5s;
+}
+
+.boton:hover {
+  color: #00bcd4;
+  transition: 0.5s;
+}
+
+/*Cosas que dejo pre hechas para funcionalidades de mas adelante uwu*/
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+/*Seccion Imagenes - Slider*/
+
+/* Codigo de slider de imagenes*/
+
+.slider_content{
+  margin: auto;
+  width: 95%;  
+  overflow: hidden;
+}
+
+.slider_content ul{
+  display: flex;
+  padding: 0;
+  width: 400%;
+
+  animation: cambio 20s infinite alternate;
+  animation-timing-function: ease-out;
+}
+.slider_content:nth-child(2){
+  animation-timing-function: step-start;
+}
+
+.slider_content li{
+  width: 100%;
+  list-style: none;
+}
+
+.slider_content img{
+  width: 100%;
+}
+
+@keyframes cambio {
+  0% {margin-left: 0;}
+  20% {margin-left: 0;}
+
+  25% {margin-left: -100;}
+  45% {margin-left: -100;}
+
+  50% {margin-left: -200;}
+  70% {margin-left: -200;}
+
+  75% {margin-left: -300;}
+  100% {margin-left: -300;}
+}
+
+/* Codigo de slider de los botones
+
+.slider_menu{
+  text-align: center;
+  margin: 20px;
+}
+
+.slider_menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.slider_menu li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: grey;
+  
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  border-radius: 100%;
+}
+*/
+
+
+/*Seccion de contenido*/
+section {
+  background: url(img/fondo.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 30px - 80px);
+  width: 100%;
+  display: flex;
+}
+.cuadros {
+  background-color: white;
+  width: 40%;
+  height: 25%;
+  border-radius: 5%;
+  margin-top: 1%;
+  margin-left: 1%;
+  overflow: hidden;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+
+}
+.colaboradores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+    
+}
+
+.imgPersona {
+
+  max-height: 80%;
+  max-width: 80%;
+  border-radius: 5%;
+  
+}
+
+.textP {
+  font-size: 18px;
+  color: #212121;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  color: #212121;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#parrafo {
+  color: #212121;
+  font-size: 20px;
+  text-align: justify;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.aside {
+  width: 40%;
+}
+h2 {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+/*Footer*/
+footer {
+  background: #757575;
+  height: 30px;
+  width: 100%;
+}
+
+.texto {
+  display: inline-block;
+  color: white;
+  font-size: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 7px 20px;
+}
+
+#instituto {
+  float: right;
+}
