@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es"> 
+
+<head>
+    <!--MetaDatos, Titulo y Conecciones(Librerias)-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/Contacto.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>Papaya | Contacto</title>
+</head>
+
+<body>
+    <!--Navegacion-->
+     <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+            <a href="Index.html" class="enlace"><img src="img/images.jpg" class="logo" alt="No se encuentra imagen"></a>
+            <ul>
+                <li><a id="btn1" class="boton" href="QuienesSomos.html">Quienes Somos</a></li>
+                <li><a class="boton" href="#">Galeria</a></li>
+                <li><a class="boton" href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <a id="sesion" href="login.html">Iniciar Sesión</a>
+    </header>
+    <!--Contenido-->
+    <section>
+        <form action="">
+            <p>Nombre:</p>
+            <input type="text" class="field" required> 
+        
+            <p>Correo electrónico:</p>
+            <input type="email" class="field" required> 
+        
+            <p>Asunto:</p>
+            <input type="text" class="field" required> 
+
+            <p>Motivo:</p>
+            <input type="text" class="field" required> 
+        
+            <p>Mensaje:</p>
+            <textarea class="field" id="mensaje" required></textarea> <br/>
+        
+            <p class="center-content">
+                <input type="submit" class="btn_confirmar" value="Confirmar">
+            </p>
+        </form>
+        <div class="div_email">
+            <img class="imagen_email" src="img/email-marketing.png" alt="no image">
+            <p class="texto_email">Ingresa los datos solicitados y nosotros</p>
+            <p class="texto_email">te contestaremos a la brevedad posible</p>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <p class="texto">Cesar Aros | Andres Nuñez | Mario Mora</p>
+        <p class="texto" id="instituto">Instituto Santo Tomas | Informática</p>
+    </footer>
+</body>
+</html>

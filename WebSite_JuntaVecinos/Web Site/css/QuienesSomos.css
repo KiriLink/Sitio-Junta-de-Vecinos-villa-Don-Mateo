@@ -95,7 +95,7 @@ nav ul li a {
 
 /*Seccion de contenido*/
 section {
-  background: url(img/fondo.jpg) no-repeat;
+  background: url(../img/fondo2.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
   height: calc(100vh - 30px - 80px);
