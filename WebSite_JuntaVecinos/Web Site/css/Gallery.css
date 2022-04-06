@@ -1,16 +1,21 @@
-* {
+/*Configuracion general de pagina*/
+*{
   padding: 0%;
   margin: 0%;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  
 }
 /*Aplicamos display:flex al headerpara que ponga en línea el nav con el botón de iniciar sesión*/
+
+
 header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   height: 80px;
   background: #8bc34a;
 }
@@ -79,6 +84,94 @@ nav ul li a {
   transition: 0.5s;
 }
 
+/* Seccion Inicio del Slider - Andres */
+
+.an-slider {
+  border-radius: 0px;
+  position: relative;
+  margin:auto;
+  padding-top: 0px;
+ 
+}
+
+.an-slider ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;    
+}
+
+.an-slider ul li  {
+  position: relative;
+  display: none;
+  height:350px;
+}
+
+.an-slider ul li img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1px;
+}
+.an-slider ul li span {
+  position: absolute;
+  bottom: 0;
+  background: hsl(0, 1%, 72%, .1);
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+}
+/* buttons */
+.an-slider .buttons  {
+  position: absolute;
+  top: 40%;
+  width:  100%;
+}
+.an-slider .buttons .next {
+  font-size: 2rem;
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+}    
+.an-slider .buttons .prev {
+  font-size: 2rem;
+  left: 0;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+}   
+.an-slider .buttons .next:hover {
+  background: hsl(0, 0%, 25%);
+  color: hsl(0, 0%, 93%);
+}
+.an-slider .buttons .prev:hover {
+  background: hsl(0, 0%, 25%);
+  color: hsl(0, 0%, 93%);
+}
+
+/* slider animation */
+.an-slider ul li {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+/* Seccion Final del Slider - Andres */
+
+/* Seccion inicio del cuerpop - Andres*/
+
+.an-cuerpo-imagenes{
+  background-color: #8bc34a;
+}
+
 /*Cosas que dejo pre hechas para funcionalidades de mas adelante uwu*/
 .checkbtn {
   font-size: 30px;
@@ -92,76 +185,6 @@ nav ul li a {
 #check {
   display: none;
 }
-
-/*Seccion Imagenes - Slider*/
-
-/* Codigo de slider de imagenes*/
-
-.slider_content{
-  margin: auto;
-  width: 95%;  
-  overflow: hidden;
-}
-
-.slider_content ul{
-  display: flex;
-  padding: 0;
-  width: 400%;
-
-  animation: cambio 20s infinite alternate;
-  animation-timing-function: ease-out;
-}
-.slider_content:nth-child(2){
-  animation-timing-function: step-start;
-}
-
-.slider_content li{
-  width: 100%;
-  list-style: none;
-}
-
-.slider_content img{
-  width: 100%;
-}
-
-@keyframes cambio {
-  0% {margin-left: 0;}
-  20% {margin-left: 0;}
-
-  25% {margin-left: -100;}
-  45% {margin-left: -100;}
-
-  50% {margin-left: -200;}
-  70% {margin-left: -200;}
-
-  75% {margin-left: -300;}
-  100% {margin-left: -300;}
-}
-
-/* Codigo de slider de los botones
-
-.slider_menu{
-  text-align: center;
-  margin: 20px;
-}
-
-.slider_menu li{
-  display: inline-block;
-  text-align: center;
-}
-
-.slider_menu li a{
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-  background-color: grey;
-  
-  width: 30px;
-  height: 30px;
-  font-size: 30px;
-  border-radius: 100%;
-}
-*/
 
 
 /*Seccion de contenido*/
@@ -239,10 +262,12 @@ h2 {
 }
 
 /*Footer*/
-footer {
+
+
+footer { /*Lo cambie para probar - Andres*/
   background: #757575;
-  height: 30px;
-  width: 100%;
+    height: 30px;
+    width: 100%;
 }
 
 .texto {

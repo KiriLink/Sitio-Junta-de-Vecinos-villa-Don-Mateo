@@ -6,9 +6,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="Gallery.css" rel="stylesheet" type="text/css" />
+    <link href="css/Gallery.css" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <title>Papaya | Galeria </title>
+    <script src="js/comands.js"></script>
+    <title>Papaya | Galeria</title>
 </head>
 
 <body>
@@ -30,25 +31,32 @@
             <a class="boton" href="Gallery.html">Galeria</a>
           </li>
           <li>
-            <a class="boton" href="#">Contacto</a>
+            <a class="boton" href="Contacto.html">Contacto</a>
           </li>
         </ul>
       </nav>
-      <a id="sesion" href="#">Iniciar Sesión</a>
+      <a id="sesion" href="login.html">Iniciar Sesión</a>
     </header>
       
-    <div class="slider_content">
+    <!-- Inicio del Slider de la pag-->
 
-      <ul>
-
-        <li id="slide_1"><img src="vecinos.1.jpg" ></li>
-        <li id="slide_2"><img src="vecinos.2.jpg" ></li>
-        <li id="slide_3"><img src="vecinos.3.jpg" ></li>
-
+    <div class="an-slider">
+      <ul class="an-slides">
+          <li><img src="img/img-tablero-web-jjvv-1560x1000.png" alt="imagen1" /><span>Junta de Vecinos</span></li>
+          <li><img src="img/IMG_9829.jpg" alt="imagen2" /><span>Reuniones Vecinales</span></li>
+          <li><img src="img/ejemplo.jpg" alt="imagen3" /><span>Actividades</span></li>
       </ul>
-
+      <div class="buttons">
+          <div class="next">&#10095;</div>
+          <div class="prev">&#10094;</div>
+      </div>
 
     </div>
+
+    <!-- Seccion del cuerpo para darle color a las imagenes y textos - Andres -->
+    <section class="an-cuerpo-imagenes">
+
+    </section>
 
     <!--Footer-->
     <footer>
