@@ -112,6 +112,8 @@ section{
 .bienvenida{
     width: 45%;
     height: 80%;
+    overflow-y: hidden;
+    overflow-y: scroll;
 }
 
 h1{
@@ -147,6 +149,8 @@ hr{
     width: 500px;
     height: 550px;
     border-radius: 50px;
+    margin-right: 2%;
+    margin-top: 2%;
 }
 
 h2{

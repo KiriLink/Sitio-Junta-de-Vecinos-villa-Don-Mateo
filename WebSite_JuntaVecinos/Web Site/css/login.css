@@ -99,7 +99,8 @@ section{
     background-position: center center;
     height: calc(100vh - 30px - 80px);
     display: flex;
-    
+    flex-direction: column; 
+    align-items: center;
 }
 
 h1{
@@ -109,7 +110,6 @@ h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     text-align: center;
-    position: absolute;
     width: 15%;
     margin: 3% 42.5%;
 }
@@ -121,8 +121,6 @@ form{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 60px;
     width: 400px;
-    position: absolute;
-    margin: 4% 39.5%;
 }
 
 .field{
@@ -169,6 +167,7 @@ input{
 
 .div_imagen_login{
     text-align: center;
+    overflow: hidden;
 }
 
 /*Footer*/
