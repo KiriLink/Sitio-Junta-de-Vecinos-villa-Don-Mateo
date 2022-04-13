@@ -157,12 +157,14 @@ nav ul li a {
 .an-slider ul li {
   animation-name: fade;
   animation-duration: 2.5s;
+
 }
 
 @keyframes fade {
   from {opacity: .2} 
   to {opacity: 1}
 }
+
 
 /* Seccion Final del Slider - Andres */
 
