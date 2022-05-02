@@ -9,7 +9,7 @@
     <link href="../css/Formularios.css" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
-    <title>Papaya | Reunion</title>
+    <title>Junta Vecinos Don Mateo I y II | Reunion</title>
 </head>
 
 <body >
@@ -19,7 +19,7 @@
             <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
 
             <ul>
-                <li><a id="btn1">Formulario publicación acta de reunión </li>
+                <li><a id="btn1">Formulario publicación acta de reunión </a></li>
             </ul>
         </nav>
         <a id="sesion" href="../VistaUsuario.html">Volver</a>
@@ -29,17 +29,16 @@
         <section>
             <form action="">
                 <p>Titulo publicación</p>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="" required>
                 <p>Nombre directivo</p>
-                <input type="text" name="" id="">
-    
+                <input type="text" name="" id="" required>
                 <br>
                 <p>Fecha registro</p>
-                <input type="date">
+                <input type="date" required>
                 <p>Hora registro</p>
-                <input type="time" name="" id="">
+                <input type="time" name="" id="" required>
                 <p>Tipo de reunión</p>
-                <select name="" id="">
+                <select name="" id="" required>
                     <option value="">Social</option>
                     <option value="">Capacitación</option>
                     <option value="">Rendición de gastos</option>
@@ -47,7 +46,7 @@
                     <option value="">Votación</option>
                 </select>
                 <br><br><br>
-                <a id="sesion" href="">Confirmar</a>
+               <input type="submit" id="sesion" value="Confirmar">
             </form>
     
         </section>
