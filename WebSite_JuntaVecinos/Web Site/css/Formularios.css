@@ -113,7 +113,16 @@
   justify-content: space-between;
   overflow: hidden;
 }
-
+#formulario{
+    display:flex;
+}
+.lineasForm{
+    margin-right:10%;
+}
+.radio{
+    display:flex;
+    width: 450px;
+}
 section {
     margin-top: 2%;
     margin-left: 2%;
