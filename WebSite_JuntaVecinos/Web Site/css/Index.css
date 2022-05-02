@@ -99,6 +99,7 @@ nav ul li a{
 #check{
     display: none;
 }
+
 /*Seccion de contenido*/
 section{
     display: flex;
@@ -112,8 +113,13 @@ section{
 .bienvenida{
     width: 45%;
     height: 80%;
-    overflow-y: hidden;
     overflow-y: scroll;
+    margin-left:10% ;
+    margin-top: 5%;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 h1{
@@ -146,11 +152,12 @@ hr{
 
 .vecinos{
     background: #689f38;
-    width: 500px;
-    height: 550px;
+    width: 380px;
+    height: 90%;
     border-radius: 50px;
     margin-right: 2%;
     margin-top: 2%;
+    
 }
 
 h2{
@@ -158,13 +165,14 @@ h2{
     font-size: 25px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 30px 210px;
+    padding: 25px;
+    text-align: center;
 }
 
 .bubble{
     background: #dcedc8;
     position: absolute;
-    width: 450px;
+    width: 330px;
     height: 150px;
     margin: 10px 27px;
     border-radius: 10px;

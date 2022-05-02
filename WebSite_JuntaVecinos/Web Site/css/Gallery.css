@@ -1,17 +1,21 @@
-* {
+/*Configuracion general de pagina*/
+*{
   padding: 0%;
   margin: 0%;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  
 }
-
 /*Aplicamos display:flex al headerpara que ponga en línea el nav con el botón de iniciar sesión*/
+
+
 header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   height: 80px;
   background: #8bc34a;
 }
@@ -21,13 +25,11 @@ nav {
   align-items: center;
 }
 
-nav>ul {
+nav > ul {
   display: flex;
-  text-decoration: none;
 }
 
 nav ul li a {
-  text-decoration: none;
   margin-left: 5px;
   color: white;
   font-size: 18px;
@@ -36,7 +38,6 @@ nav ul li a {
   padding: 7px 12px;
   text-transform: uppercase;
 }
-
 #btn1 {
   margin-left: 20px;
 }
@@ -65,7 +66,6 @@ nav ul li a {
   border-radius: 50px;
   border: #dcedc8 solid 5px;
 }
-
 /*Hovers de Barra de Navegacion*/
 .logo:hover {
   border: #00bcd4 solid 2px;
@@ -84,25 +84,93 @@ nav ul li a {
   transition: 0.5s;
 }
 
-
 /* Seccion Inicio del Slider - Andres */
 
+.an-slider {
+  border-radius: 0px;
+  position: relative;
+  margin:auto;
+  padding-top: 0px;
+ 
+}
 
+.an-slider ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;    
+}
 
+.an-slider ul li  {
+  position: relative;
+  display: none;
+  height:350px;
+}
 
+.an-slider ul li img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1px;
+}
+.an-slider ul li span {
+  position: absolute;
+  bottom: 0;
+  background: hsl(0, 1%, 72%, .1);
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+}
+/* buttons */
+.an-slider .buttons  {
+  position: absolute;
+  top: 40%;
+  width:  100%;
+}
+.an-slider .buttons .next {
+  font-size: 2rem;
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+}    
+.an-slider .buttons .prev {
+  font-size: 2rem;
+  left: 0;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  text-align: center;
+}   
+.an-slider .buttons .next:hover {
+  background: hsl(0, 0%, 25%);
+  color: hsl(0, 0%, 93%);
+}
+.an-slider .buttons .prev:hover {
+  background: hsl(0, 0%, 25%);
+  color: hsl(0, 0%, 93%);
+}
 
+/* slider animation */
+.an-slider ul li {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
 
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
 
 /* Seccion Final del Slider - Andres */
 
-/* Seccion Inicio del cuerpo - Andres*/
+/* Seccion inicio del cuerpop - Andres*/
 
-.cuerpo-imagenes{
-  background-color: #DCEDC8;
+.an-cuerpo-imagenes{
+  background-color: #8bc34a;
 }
-
-
-
 
 /*Cosas que dejo pre hechas para funcionalidades de mas adelante uwu*/
 .checkbtn {
@@ -114,7 +182,6 @@ nav ul li a {
   cursor: pointer;
   display: none;
 }
-
 #check {
   display: none;
 }
@@ -129,7 +196,6 @@ section {
   width: 100%;
   display: flex;
 }
-
 .cuadros {
   background-color: white;
   width: 40%;
@@ -141,14 +207,13 @@ section {
 
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
-  align-items: center;
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
 
 }
-
 .colaboradores {
   display: flex;
   flex-direction: row;
@@ -156,7 +221,7 @@ section {
   align-items: center;
   justify-content: center;
   width: 50%;
-
+    
 }
 
 .imgPersona {
@@ -164,7 +229,7 @@ section {
   max-height: 80%;
   max-width: 80%;
   border-radius: 5%;
-
+  
 }
 
 .textP {
@@ -172,7 +237,6 @@ section {
   color: #212121;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
 h1 {
   color: #212121;
   font-size: 50px;
@@ -186,11 +250,9 @@ h1 {
   text-align: justify;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .aside {
   width: 40%;
 }
-
 h2 {
   color: black;
   font-size: 25px;
@@ -202,11 +264,10 @@ h2 {
 /*Footer*/
 
 
-footer {
-  /*Lo cambie para probar - Andres*/
+footer { /*Lo cambie para probar - Andres*/
   background: #757575;
-  height: 30px;
-  width: 100%;
+    height: 30px;
+    width: 100%;
 }
 
 .texto {
