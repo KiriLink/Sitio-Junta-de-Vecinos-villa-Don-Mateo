@@ -9,14 +9,7 @@
   }
   
   /*Aplicamos display:flex al headerpara que ponga en línea el nav con el botón de iniciar sesión*/
- 
-  body{
-      background-image: url(../img/fondo_form_denuncia.jpg);
-      background-repeat: no-repeat;
-      background-position: bottom right;
-      background-attachment: fixed;
-      background-size: 34%;
-  } 
+
   
   header {
     width: 100%;
@@ -114,9 +107,16 @@
 
 /*Seccion de contenido*/
 
+.div_general{
+  margin: 0%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
 section {
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-top: 2%;
+    margin-left: 2%;
   }
 
 input{
@@ -127,6 +127,12 @@ input{
 
 .displey-cezar{
     display: flex;
+}
+
+select{
+  margin-top: 9px;
+  height: 30px;
+  width: 300px;
 }
 
 p{
@@ -142,10 +148,15 @@ textarea{
     margin-top: 5px;
 }
 
+.imagen_fondo{
+      width: 500px;
+      height: 700px;
+}
+
 /*Footer*/
 footer {
     background: #757575;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     height: 30px;
     width: 100%;
