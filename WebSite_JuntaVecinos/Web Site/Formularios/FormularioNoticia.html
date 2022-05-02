@@ -9,53 +9,57 @@
     <link href="../css/Formularios.css" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
-    <title>Papaya | Noticia</title>
+    <title>Junta Vecinos Don Mateo I y II | Denuncia</title>
 </head>
 
-<body >
+<body>
     <header>
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
 
             <ul>
-                <li><a id="btn1">Formulario Solicitud de Denuncia </li>
+                <li><a id="btn1">Formulario Solicitud de noticia </li>
             </ul>
         </nav>
-        <a id="sesion" href="../login.html">Volver</a>
+        <a id="sesion" href="../VistaUsuario.html">Volver</a>
     </header>
 
     <div class="div_general">
-        <section>
-            <form action="">
-                <p>Titulo publicación</p>
-                <input type="text" name="" id="">
-                <p>Nombre directivo</p>
-                <input type="text" name="" id="">
-    
-                <br>
-                <p>Fecha registro</p>
-                <input type="date">
-                <p>Hora registro</p>
-                <input type="time" name="" id="">
-                <p>Tipo de reunión</p>
-                <select name="" id="">
-                    <option value="">Social</option>
-                    <option value="">Capacitación</option>
-                    <option value="">Rendición de gastos</option>
-                    <option value="">Cambio de directiva</option>
-                    <option value="">Votación</option>
-                </select>
-                <br><br><br>
-                <a id="sesion" href="">Confirmar</a>
-            </form>
-            <br><br><br><br>
-    
-        </section>
-        <section>
-            <img src="../img/fondo_form_denuncia.jpg" alt="">
-        </section>
-    </div>
+    <section>
+        <form action="#">
+            <div id="general">
+                <div>
+            <label for="titulo">Titulo publicación</label><br>
+            <input type="text" name="titulo" id="" required><br>
+            <label for="tipo_pub">Tipo de publicación</label><br>
+            <select name="tipo_pub">
+                <option value="1">Calendario de reuniones</option>
+                <option value="2">Mejora de vivienda</option>
+                <option value="3">Centros sociales</option>
+                <option value="4">Mascota extraviada</option>
+                <option value="5">Bienestar</option>
+                <option value="6">Pequeño emprendimiento</option>
+            </select><br>
+            </div>
+            <div>
+            <label for="fecha">Fecha registro</label><br>
+            <input type="date" name="fecha" id="" required><br>
+            <label for="hora">Hora registro</label><br>
+            <input type="time" name="hora" id="" required><br>
+            </div>
+            </div>
+            <label for="cont">Contenido</label><br>
+            <textarea name="cont"></textarea><br>
+               <input type="submit" id="sesion" value="Confirmar">
+        </form>
+        <br><br><br><br>
+
+    </section>
+    <section>
+        
+    </section>
+</div>
 
     <!--Footer-->
     <footer>
