@@ -146,12 +146,15 @@ p{
 textarea{
     resize: none;
     margin-top: 5px;
+    height: 100px;
 }
 
 .imagen_fondo{
       width: 500px;
       height: 700px;
 }
+
+
 
 /*Footer*/
 footer {
