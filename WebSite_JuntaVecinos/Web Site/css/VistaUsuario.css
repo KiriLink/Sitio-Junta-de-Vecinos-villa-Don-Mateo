@@ -1,0 +1,414 @@
+/*Configuracion general de pagina*/
+* {
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+/*Aplicamos display:flex al headerpara que ponga en línea el nav con el botón de iniciar sesión*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+    background: #8bc34a;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav ul li a {
+    margin-left: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+    padding: 7px 12px;
+    text-transform: uppercase;
+
+}
+
+#btn1 {
+    margin-left: 20px;
+}
+
+#sesion {
+    text-align: center;
+    margin-right: 25px;
+    background: #00bcd4;
+    border-radius: 50px;
+    border: #dcedc8 solid 5px;
+    padding: 7px 15px;
+    text-transform: uppercase;
+
+}
+
+.logo {
+    margin-left: 10%;
+    height: 60px;
+    border-radius: 50px;
+}
+
+#sesion {
+    background: #00bcd4;
+    border-radius: 50px;
+    border: #dcedc8 solid 5px;
+
+}
+
+/*Hovers de Barra de Navegacion*/
+.logo:hover {
+    border: #00bcd4 solid 2px;
+    transition: .2s;
+}
+
+#sesion:hover {
+    background: #dcedc8;
+    border: #00bcd4 solid 5px;
+    color: transparent;
+    transition: .5s;
+}
+
+.boton:hover {
+    color: #00bcd4;
+    transition: .5s;
+}
+
+#nombreAdmin {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    color: white;
+    margin-right: 15px;
+    text-transform: uppercase;
+
+}
+
+/*Cuerpo*/
+#todoAdmin {
+    display: flex;
+    overflow-x: hidden;
+    padding-top: 5%;
+    padding-bottom: 15%;
+}
+
+#pAdmin {
+    width: 31%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#titulo {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin-bottom: 1%;
+}
+
+#barraTit {
+    border-color: #c79e68;
+    background-color: #c79e68;
+}
+
+#contTit {
+    margin-top: 10%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 5%;
+}
+
+#contTit2 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+
+}
+
+#imagenAdmin {
+    height: 25%;
+    margin-left: 5%;
+
+}
+
+#img {
+    width: 400px;
+}
+
+#muralCompleto {
+    background-color: #689f38;
+    border-radius: 10px;
+    width: 88%;
+    /*height: 700px;*/
+    margin-left: 6%;
+    padding: 2%;
+    margin-bottom: 1%;
+
+}
+
+#cuadrosTotal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#tituloMural {
+    color: white;
+    margin-bottom: 2%;
+}
+
+.cuadros {
+    display: flex;
+    flex-direction: column;
+    background-color: #dcedc8;
+    border-radius: 10px;
+    width: 28%;
+    height: 250px;
+    overflow: hidden;
+    margin-left: 3%;
+    margin-top: 5%;
+    padding: 1%;
+    margin-bottom: 1%;
+    overflow-y: scroll;
+}
+
+.nombre {
+    color: #757575;
+}
+
+.fecha {
+    text-align: end;
+    margin-bottom: 2%;
+    color: #757575;
+
+}
+
+.tituloP {
+    margin-bottom: 2%;
+}
+
+.tipoP {
+    margin-bottom: 2%;
+    color: #00bcd4;
+}
+
+.contenidoC {
+    text-align: justify;
+    color: #212121;
+}
+
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+    #todoAdmin {
+        justify-content: space-between;
+    }
+
+    #img {
+        width: 500px;
+        margin-right: 250px;
+
+    }
+
+    .cuadros {
+        display: flex;
+        flex-direction: column;
+        background-color: #dcedc8;
+        border-radius: 10px;
+        width: 30%;
+        height: 300px;
+        overflow: hidden;
+        margin-left: 3%;
+        margin-top: 5%;
+        padding: 1%;
+        margin-bottom: 1%;
+        overflow-y: scroll;
+    }
+
+    nav ul li a {
+        margin-left: 5px;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Segoe UI',
+            Tahoma,
+            Geneva,
+            Verdana,
+            sans-serif;
+        padding: 7px 12px;
+        text-transform: uppercase;
+
+    }
+
+    #nombreAdmin {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        color: white;
+        margin-right: 15px;
+        text-transform: uppercase;
+
+    }
+
+
+}
+
+.cuadros::-webkit-scrollbar {
+    display: none;
+}
+
+#publicaciones {
+    background-color: #00bcd4;
+}
+
+#general {
+    display: flex;
+    justify-content: center;
+}
+
+#pubIzquierda,
+#pubDerecha {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+#tituloPub {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titPubl {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.publicarPub {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 50px;
+    border: white solid 3px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 7px 22px;
+    width: 230px;
+    text-transform: uppercase;
+    background-color: #689f38;
+
+}
+
+.parrafoPub {
+    margin-top: 5%;
+    text-align: justify;
+    width: 40%;
+    margin-bottom: auto;
+}
+
+.imgPub {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+
+#solicitudes {
+    background-color: #dcedc8;
+}
+
+.general {
+    display: flex;
+    justify-content: center;
+}
+
+#solIzquierda,
+#solDerecha {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+#tituloSol {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tituloSol {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.publicarSol {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 50px;
+    border: white solid 3px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 7px 2px;
+    width: 230px;
+    text-transform: uppercase;
+    background-color: #00bcd4;
+
+}
+
+.parrafoSol {
+    margin-top: 5%;
+    text-align: justify;
+    width: 40%;
+}
+
+.imgSol {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+
+/*Footer*/
+footer {
+    background: #757575;
+    height: 30px;
+    width: 100%;
+}
+
+.texto {
+    display: inline-block;
+    color: white;
+    font-size: 12px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 7px 20px;
+}
+
+#instituto {
+    float: right;
+}

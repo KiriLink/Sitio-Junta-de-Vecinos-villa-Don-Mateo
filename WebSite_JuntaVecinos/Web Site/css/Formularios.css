@@ -1,0 +1,243 @@
+/*Configuracion general de pagina*/
+* {
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+/*Aplicamos display:flex al headerpara que ponga en línea el nav con el botón de iniciar sesión*/
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+    background: #8bc34a;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+nav > ul {
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin-left: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 7px 12px;
+    text-transform: uppercase;
+}
+
+#btn1 {
+    margin-left: 20px;
+}
+
+#sesion {
+    font-size: 18px;
+    margin-right: 25px;
+    background: #00bcd4;
+    border-radius: 50px;
+    border: #dcedc8 solid 5px;
+    color: white;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 7px 15px;
+    text-transform: uppercase;
+}
+
+.logo {
+    margin-left: 10%;
+    height: 60px;
+    border-radius: 50px;
+}
+
+#sesion {
+    background: #00bcd4;
+    border-radius: 50px;
+    border: #dcedc8 solid 5px;
+    height: auto;
+}
+
+/*Hovers de Barra de Navegacion*/
+.logo:hover {
+    border: #00bcd4 solid 2px;
+    transition: 0.2s;
+}
+
+#sesion:hover {
+    color: #00bcd4;
+    background: #dcedc8;
+    border: #00bcd4 solid 5px;
+    transition: 0.5s;
+}
+
+.boton:hover {
+    color: #00bcd4;
+    transition: 0.5s;
+}
+
+/*Cosas que dejo pre hechas para funcionalidades de mas adelante uwu*/
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/*Seccion de contenido*/
+
+.div_general {
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#formulario {
+    display: flex;
+}
+
+.lineasForm {
+    margin-right: 10%;
+}
+
+.radio {
+    display: flex;
+    margin-top: 9px;
+    height: 30px;
+    width: 300px;
+    align-items: center;
+}
+
+.labelRadio {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+section {
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#entrada {
+    margin-top: 9px;
+    height: 30px;
+    width: 300px;
+}
+
+#confirmar {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    background: #00bcd4;
+    border-radius: 50px;
+    border: #dcedc8 solid 5px;
+    margin-top: 5%;
+}
+
+.displey-cezar {
+    display: flex;
+}
+
+#img {
+    height: 300px;
+}
+
+#imagen {
+    margin-top: inherit;
+    text-align: right;
+}
+
+select {
+    margin-top: 9px;
+    height: 30px;
+    width: 300px;
+}
+
+p {
+    margin-top: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+label {
+    margin-top: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+    margin-top: 5px;
+    height: 100px;
+}
+
+.imagen_fondo {
+    width: 500px;
+    height: 700px;
+}
+
+.columnaDatos {
+    display: flex;
+}
+
+.columnaForm {
+    margin-right: 2%;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Footer*/
+footer {
+    background: #757575;
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+}
+
+.texto {
+    display: inline-block;
+    color: white;
+    font-size: 12px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 7px 20px;
+}
+
+#instituto {
+    float: right;
+}
