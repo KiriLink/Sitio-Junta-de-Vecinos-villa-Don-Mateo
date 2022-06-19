@@ -34,7 +34,8 @@ CREATE TABLE Documento(
     horaEntrega time not null,
     comentarioDocumento varchar(500) not null,
     estadoDocumento int not null,
-    rutRetiro varchar(15),
+    nombreDocumentoRetiro varchar(250),
+    folioDocumento varchar(50),
     FOREIGN KEY (rutUsuario) REFERENCES usuario(rutUsuario),
     FOREIGN KEY (IDTipoDocumento) REFERENCES tipo_documento(IDTipoDocumento)
 );
